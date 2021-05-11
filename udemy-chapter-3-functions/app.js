@@ -30,3 +30,21 @@ function GreetAll(greeting) {
     ;
 }
 log(GreetAll("Hello", "Mukesh", "Raj", "Ajay", "Amit"));
+//Simplest way function type expression
+//The syntax (a: string) => void means “a function with one parameter, named a, of type string, that doesn’t have a return value”. 
+//Just like with function declarations, if a parameter type isn’t specified, it’s implicitly any.
+function greeter(fn) {
+    fn("Hello, World");
+}
+greeter(log);
+// Fat arrow notations are used for anonymous functions i.e for function expressions. 
+//They are also called lambda functions in other languages.
+var sum = function (x, y) {
+    return x + y;
+};
+log(sum(10, 20)); //returns 30
+function add(a, b) {
+    return a + b;
+}
+log(add("Hello ", "Mukesh")); // returns "Hello Steve" 
+log(add(10, 20)); // returns 30 
