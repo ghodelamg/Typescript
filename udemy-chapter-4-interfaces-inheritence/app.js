@@ -17,3 +17,31 @@ var empDetail = {
     }
 };
 log(empDetail);
+var empDetail2 = {
+    empCode: 09,
+    empName: "Ramit",
+    empDesignation: "SE",
+    getSalary: function (num) {
+        return num;
+    },
+    getManagerName: function (name) {
+        return name;
+    }
+};
+log(empDetail2);
+log(empDetail2.getManagerName("Me"));
+log(empDetail2.getSalary(40000));
+var personObj = { name: 'Mukesh', age: 45, adhar_no: "4256 4568 6545" };
+personObj.name = 'Mukesh Ghodela'; // OK
+personObj.age = 50; // OK
+;
+function addKeyValue(key, value) {
+    console.log('addKeyValue: key = ' + key + ', value = ' + value);
+}
+function updateKeyValue(key, value) {
+    console.log('updateKeyValue: key = ' + key + ', value = ' + value);
+}
+var kvp = addKeyValue;
+kvp(1, 'Mukesh'); //Output: addKeyValue: key = 1, value = Bill 
+kvp = updateKeyValue;
+kvp(2, 'Jenish'); //Output: updateKeyValue: key = 2, value = Steve 
