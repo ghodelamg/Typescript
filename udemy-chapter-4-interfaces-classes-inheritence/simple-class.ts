@@ -1,3 +1,8 @@
+// A class can include the following:
+
+// Constructor
+// Properties
+// Methods
 class SimpleClass {
   public id: number
   print(): void {
