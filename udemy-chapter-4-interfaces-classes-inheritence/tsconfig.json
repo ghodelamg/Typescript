@@ -1,11 +1,15 @@
 {
     "compilerOptions": {
         "target": "ES6",
+        "lib": ["dom", "es6"],
         "sourceMap": true,
         "removeComments": true,
         "noImplicitAny": true,
         "module": "system",
         "moduleResolution": "node",
         "types": ["node"]
-    }
+    },
+    "files": [
+       "abstract-class.ts"
+      ]
 }
