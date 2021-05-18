@@ -5,11 +5,6 @@
         "sourceMap": true,
         "removeComments": true,
         "noImplicitAny": true,
-        "module": "system",
-        "moduleResolution": "node",
-        "types": ["node"]
-    },
-    "files": [
-       "abstract-class.ts"
-      ]
+        "module": "system"
+    }
 }
