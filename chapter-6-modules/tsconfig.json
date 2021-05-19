@@ -8,6 +8,5 @@
         "module": "system",
         "moduleResolution": "node",
         // "types": ["node"]
-    },
-    "files": ["./class-modifiers-and-static-keyword.ts"]
+    }
 }
